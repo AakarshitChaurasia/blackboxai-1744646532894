@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infernox</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'inf-red': '#FF0000',
+                        'inf-dark': '#0A0A0A',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        .product-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+        .product-image {
+            aspect-ratio: 1;
+            object-fit: contain;
+            background: #111111;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header/Navigation -->
+    <header class="bg-black py-6 fixed w-full top-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-3xl font-bold text-white tracking-tight">Infernox</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/shop" class="text-gray-300 hover:text-inf-red transition font-medium">Shop</a>
+                <a href="/teams" class="text-gray-300 hover:text-inf-red transition font-medium">Teams</a>
+                <a href="/news" class="text-gray-300 hover:text-inf-red transition font-medium">News</a>
+                <a href="/submit" class="text-gray-300 hover:text-inf-red transition font-medium">Submit</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Product Grid -->
+        <section class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/photocards.jpg" alt="Photocards" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Accessories</span>
+Pack of Official Infernox Photocards - 2025 INFset Edition
+                        <p class="text-inf-red font-bold mt-3 text-xl">$15.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/jersey-red.jpg" alt="Jersey" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Jerseys</span>
+INF Rivals Pro Jersey [PRE-ORDER for May 2025]
+                        <p class="text-inf-red font-bold mt-3 text-xl">$75.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/jersey-black.jpg" alt="Jersey" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Jerseys</span>
+INFset Pro Jersey
+                        <p class="text-inf-red font-bold mt-3 text-xl">$75.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/hoodie-red.jpg" alt="Hoodie" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Hoodies</span>
+INF City Race Club Hoodie - Red
+                        <p class="text-inf-red font-bold mt-3 text-xl">$75.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/hoodie-black.jpg" alt="Hoodie" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Hoodies</span>
+INF City Race Club Hoodie - Black
+                        <p class="text-inf-red font-bold mt-3 text-xl">$75.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <img src="assets/images/jersey-custom.jpg" alt="Jersey" class="product-image w-full bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Jerseys</span>
+INF Rivals Custom Jersey [PRE-ORDER for May 2025]
+                        <p class="text-inf-red font-bold mt-3 text-xl">$85.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">View Product</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Senset Classic Competition -->
+        <section class="bg-gradient-to-br from-gray-900 to-black py-24 mt-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6">The Infset Classic Competition</h2>
+                <p class="text-2xl mb-8 text-gray-300">Buy the Bundle. Submit your clip. Win a Trip to LA</p>
+                <a href="/submit" class="inline-block bg-inf-red text-white px-10 py-4 rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 font-medium text-lg">Submit your Clips</a>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="container mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Twitter -->
+                <a href="https://twitter.com/Infernox" target="_blank" class="group bg-gray-900 p-8 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-800 text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-opacity-10 bg-inf-red mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-twitter text-3xl text-inf-red"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-inf-red transition-colors duration-300">1.07M</h3>
+                    <p class="text-gray-400 font-medium">Followers</p>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@Infernox" target="_blank" class="group bg-gray-900 p-8 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-800 text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-opacity-10 bg-inf-red mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-youtube text-3xl text-inf-red"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-inf-red transition-colors duration-300">939.0K</h3>
+                    <p class="text-gray-400 font-medium">Followers</p>
+                </a>
+
+                <!-- Instagram -->
+                <a href="http://instagram.com/infernox" target="_blank" class="group bg-gray-900 p-8 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-800 text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-opacity-10 bg-inf-red mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-instagram text-3xl text-inf-red"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-inf-red transition-colors duration-300">645.0K</h3>
+                    <p class="text-gray-400 font-medium">Followers</p>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@infernox" target="_blank" class="group bg-gray-900 p-8 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-800 text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-opacity-10 bg-inf-red mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fab fa-tiktok text-3xl text-inf-red"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2 group-hover:text-inf-red transition-colors duration-300">1.40M</h3>
+                    <p class="text-gray-400 font-medium">Followers</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Recent Videos -->
+        <section class="container mx-auto px-6 py-16">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Recent Videos</h2>
+                <a href="/creators" class="text-inf-red hover:text-red-700 transition">See all</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Video Card 1 -->
+                <a href="https://www.youtube.com/watch?v=6iGo8sT_8so" target="_blank" class="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-800">
+                    <div class="relative">
+                        <img src="assets/images/video-1.jpg" alt="Video thumbnail" class="w-full h-48 object-cover bg-gray-800">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-4xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg group-hover:text-inf-red transition-colors duration-300">Tarik Reacts to KRU vs EG | Week 4 | VCT 2025</h3>
+                        <p class="text-gray-400 text-sm mt-3">12 hours ago</p>
+                    </div>
+                </a>
+
+                <!-- Video Card 2 -->
+                <a href="https://www.youtube.com/watch?v=dgNbonjrqxY" target="_blank" class="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-800">
+                    <div class="relative">
+                        <img src="assets/images/video-2.jpg" alt="Video thumbnail" class="w-full h-48 object-cover bg-gray-800">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-4xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+Tarik Reacts to Infernox vs LOUD
+                        <p class="text-gray-400 text-sm mt-3">1 day ago</p>
+                    </div>
+                </a>
+
+                <!-- Video Card 3 -->
+                <a href="https://www.youtube.com/watch?v=MsJSv5UQfE0" target="_blank" class="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-800">
+                    <div class="relative">
+                        <img src="assets/images/video-3.jpg" alt="Video thumbnail" class="w-full h-48 object-cover bg-gray-800">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-4xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg group-hover:text-inf-red transition-colors duration-300">The ultimate tiebreaker game... (INF vs. LOUD)</h3>
+                        <p class="text-gray-400 text-sm mt-3">1 day ago</p>
+                    </div>
+                </a>
+
+                <!-- Video Card 4 -->
+                <a href="https://www.youtube.com/watch?v=BVTn9w7lS8Y" target="_blank" class="group bg-gray-900 rounded-xl overflow-hidden hover:bg-gray-800 transition-all duration-300 border border-gray-800">
+                    <div class="relative">
+                        <img src="assets/images/video-4.jpg" alt="Video thumbnail" class="w-full h-48 object-cover bg-gray-800">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-play text-white text-4xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg group-hover:text-inf-red transition-colors duration-300">Tarik Reacts to C9 vs FURIA | WEEK 4 | VCT 2025</h3>
+                        <p class="text-gray-400 text-sm mt-3">1 day ago</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section class="bg-gradient-to-br from-gray-900 to-black py-24 mt-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">Where champions are born</h2>
+                <p class="text-2xl mb-8 text-gray-300">Meet the teams</p>
+                <a href="/teams" class="inline-block bg-inf-red text-white px-10 py-4 rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 font-medium text-lg">View Teams</a>
+            </div>
+        </section>
+
+        <!-- Featured News -->
+        <section class="container mx-auto px-6 py-24">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Featured News</h2>
+                <a href="/news" class="text-inf-red hover:text-red-700 transition font-medium">See all</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News Card 1 -->
+                <article class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:bg-gray-800 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/news-1.jpg" alt="News thumbnail" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500 bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Mar 25, 2025</span>
+Infernox announces Grand Prize Winners of the Year 2 INF Classic Competition
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:bg-gray-800 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/news-2.jpg" alt="News thumbnail" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500 bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Mar 03, 2025</span>
+Infernox sign Marvel Rivals Roster
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:bg-gray-800 transition-all duration-300">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/news-3.jpg" alt="News thumbnail" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500 bg-gray-800">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Feb 19, 2025</span>
+Infernox announces entry into Marvel Rivals
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black py-24 mt-16 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">Infernox</h3>
+                    <p class="text-gray-400 leading-relaxed">Where champions are born. Join us in our journey to dominate esports across the globe.</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/shop" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Shop</a></li>
+                        <li><a href="/teams" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Teams</a></li>
+                        <li><a href="/news" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>News</a></li>
+                        <li><a href="/submit" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Submit</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-envelope mr-3 text-inf-red"></i>contact@infernox.gg</li>
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-inf-red"></i>Los Angeles, CA</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                        <a href="http://instagram.com/infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-tiktok text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Infernox. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
