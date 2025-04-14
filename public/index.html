@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infernox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/loader.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'inf-red': '#FF0000',
+                        'inf-dark': '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-inf-dark text-white min-h-screen">
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-50 backdrop-blur-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-3xl font-bold text-white tracking-tight">Infernox</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/shop" class="text-gray-300 hover:text-inf-red transition font-medium">Shop</a>
+                    <a href="/teams" class="text-gray-300 hover:text-inf-red transition font-medium">Teams</a>
+                    <a href="/news" class="text-gray-300 hover:text-inf-red transition font-medium">News</a>
+                    <a href="/submit" class="text-gray-300 hover:text-inf-red transition font-medium">Submit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-inf-dark via-black to-inf-dark opacity-90"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">
+                DOMINATE<br>THE GAME
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                Join the elite ranks of Infernox, where legends are forged and champions rise.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="/teams" class="bg-inf-red text-white px-8 py-4 rounded-lg font-medium hover:bg-red-700 transition transform hover:scale-105">
+                    Meet Our Teams
+                </a>
+                <a href="/shop" class="border border-inf-red text-inf-red px-8 py-4 rounded-lg font-medium hover:bg-inf-red hover:text-white transition transform hover:scale-105">
+                    Shop Merch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Cards -->
+                <div class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-inf-red transition-all duration-300">
+                    <div class="bg-gradient-to-b from-gray-800 to-gray-900">
+                        <div class="aspect-square bg-gray-800"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gray-400 text-sm font-medium">Jerseys</span>
+                        <h3 class="text-xl font-bold mt-2">INF Pro Jersey 2025</h3>
+                        <p class="text-inf-red font-bold mt-3 text-xl">$75.00</p>
+                        <button class="mt-4 w-full bg-inf-red text-white py-3 rounded-lg font-medium hover:bg-red-700 transition">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Add more product cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-bold">Latest News</h2>
+                <a href="/news" class="text-inf-red hover:text-red-700 transition font-medium">View All</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News Cards -->
+                <article class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-inf-red transition-all duration-300">
+                    <div class="relative">
+                        <div class="aspect-video bg-gray-800"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold group-hover:text-inf-red transition-colors duration-300">
+                            Infernox Signs World-Class CS2 Roster
+                        </h3>
+                        <p class="text-gray-400 mt-2">
+                            A new era begins as we welcome five legendary players to our CS2 division.
+                        </p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <span>April 14, 2025</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Add more news cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black py-24 mt-16 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">Infernox</h3>
+                    <p class="text-gray-400 leading-relaxed">Where champions are born. Join us in our journey to dominate esports across the globe.</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/shop" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Shop</a></li>
+                        <li><a href="/teams" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Teams</a></li>
+                        <li><a href="/news" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>News</a></li>
+                        <li><a href="/submit" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Submit</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-envelope mr-3 text-inf-red"></i>contact@infernox.gg</li>
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-inf-red"></i>Los Angeles, CA</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                        <a href="http://instagram.com/infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-tiktok text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Infernox. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
