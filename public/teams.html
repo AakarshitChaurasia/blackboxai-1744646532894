@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Infernox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/loader.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'inf-red': '#FF0000',
+                        'inf-dark': '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-inf-dark text-white min-h-screen">
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-50 backdrop-blur-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-3xl font-bold text-white tracking-tight">Infernox</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/shop" class="text-gray-300 hover:text-inf-red transition font-medium">Shop</a>
+                    <a href="/teams" class="text-inf-red font-medium">Teams</a>
+                    <a href="/news" class="text-gray-300 hover:text-inf-red transition font-medium">News</a>
+                    <a href="/submit" class="text-gray-300 hover:text-inf-red transition font-medium">Submit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h1 class="text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">Our Teams</h1>
+            <p class="text-xl text-gray-400 max-w-2xl">Meet the elite squads that represent Infernox across various competitive gaming titles.</p>
+        </div>
+    </section>
+
+    <!-- Teams Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Valorant Team -->
+                <div class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-inf-red transition-all duration-300">
+                    <div class="relative">
+                        <div class="aspect-video bg-gray-800"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold">Valorant</h3>
+                            <img src="/images/games/valorant-logo.png" alt="Valorant" class="h-8">
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#1</span>
+                                <span class="font-medium">TenZ</span>
+                                <span class="text-gray-400">Duelist</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#2</span>
+                                <span class="font-medium">Shroud</span>
+                                <span class="text-gray-400">Controller</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#3</span>
+                                <span class="font-medium">Tarik</span>
+                                <span class="text-gray-400">Initiator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CS2 Team -->
+                <div class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-inf-red transition-all duration-300">
+                    <div class="relative">
+                        <div class="aspect-video bg-gray-800"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold">CS2</h3>
+                            <img src="/images/games/cs2-logo.png" alt="CS2" class="h-8">
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#1</span>
+                                <span class="font-medium">s1mple</span>
+                                <span class="text-gray-400">AWPer</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#2</span>
+                                <span class="font-medium">NiKo</span>
+                                <span class="text-gray-400">Rifler</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#3</span>
+                                <span class="font-medium">device</span>
+                                <span class="text-gray-400">Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apex Legends Team -->
+                <div class="group bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-inf-red transition-all duration-300">
+                    <div class="relative">
+                        <div class="aspect-video bg-gray-800"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold">Apex Legends</h3>
+                            <img src="/images/games/apex-logo.png" alt="Apex Legends" class="h-8">
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#1</span>
+                                <span class="font-medium">aceu</span>
+                                <span class="text-gray-400">Wraith</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#2</span>
+                                <span class="font-medium">iiTzTimmy</span>
+                                <span class="text-gray-400">Pathfinder</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-inf-red">#3</span>
+                                <span class="font-medium">TSM_ImperialHal</span>
+                                <span class="text-gray-400">Bloodhound</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black py-24 mt-16 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-inf-red to-red-500">Infernox</h3>
+                    <p class="text-gray-400 leading-relaxed">Where champions are born. Join us in our journey to dominate esports across the globe.</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/shop" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Shop</a></li>
+                        <li><a href="/teams" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Teams</a></li>
+                        <li><a href="/news" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>News</a></li>
+                        <li><a href="/submit" class="text-gray-400 hover:text-inf-red transition-colors duration-300 flex items-center"><i class="fas fa-chevron-right mr-2 text-sm"></i>Submit</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-envelope mr-3 text-inf-red"></i>contact@infernox.gg</li>
+                        <li class="text-gray-400 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-inf-red"></i>Los Angeles, CA</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-white">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com/Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                        <a href="http://instagram.com/infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@infernox" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-inf-red transition-colors duration-300">
+                            <i class="fab fa-tiktok text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-16 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Infernox. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
