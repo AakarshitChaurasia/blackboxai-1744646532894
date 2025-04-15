@@ -26,366 +26,9 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Interactive Gaming Dragons Background -->
-    <div class="dragon-container">
-        <!-- Game Elements -->
-        <div class="game-elements">
-            <div class="floating-controller"></div>
-            <div class="floating-keyboard"></div>
-            <div class="floating-mouse"></div>
-        </div>
-
-        <!-- Playful Red Dragon -->
-        <svg class="dragon red-dragon" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-            <!-- Dragon Tail -->
-            <path class="dragon-tail" d="M20,50 Q10,45 15,40" 
-                fill="none" stroke="rgba(255,0,0,0.4)" stroke-width="2">
-                <animate attributeName="d"
-                    dur="0.5s"
-                    repeatCount="indefinite"
-                    values="M20,50 Q10,45 15,40;
-                           M20,50 Q15,40 20,35;
-                           M20,50 Q10,45 15,40"
-                />
-            </path>
-            <!-- Red Dragon Body -->
-            <path class="dragon-body" d="M30,50 Q45,30 60,50 T90,50 T120,50" 
-                fill="none" stroke="rgba(255,0,0,0.4)" stroke-width="3">
-                <animate attributeName="d" 
-                    dur="3s" 
-                    repeatCount="indefinite"
-                    values="M30,50 Q45,30 60,50 T90,50 T120,50;
-                           M30,50 Q45,70 60,50 T90,50 T120,50;
-                           M30,50 Q45,30 60,50 T90,50 T120,50"
-                />
-            </path>
-            
-            <!-- Red Dragon Wings -->
-            <path class="dragon-wing left-wing" d="M60,50 Q40,20 60,40" 
-                fill="none" stroke="rgba(255,69,0,0.4)" stroke-width="2">
-                <animate attributeName="d"
-                    dur="0.5s"
-                    repeatCount="indefinite"
-                    values="M60,50 Q40,20 60,40;
-                           M60,50 Q45,35 60,45;
-                           M60,50 Q40,20 60,40"
-                />
-            </path>
-            <path class="dragon-wing right-wing" d="M60,50 Q80,20 60,40" 
-                fill="none" stroke="rgba(255,69,0,0.4)" stroke-width="2">
-                <animate attributeName="d"
-                    dur="0.5s"
-                    repeatCount="indefinite"
-                    values="M60,50 Q80,20 60,40;
-                           M60,50 Q75,35 60,45;
-                           M60,50 Q80,20 60,40"
-                />
-            </path>
-
-            <!-- Dragon Head -->
-            <path class="dragon-head" d="M120,50 Q130,50 135,45 L140,48" 
-                fill="none" stroke="rgba(255,0,0,0.4)" stroke-width="3">
-                <animate attributeName="d"
-                    dur="1.5s"
-                    repeatCount="indefinite"
-                    values="M120,50 Q130,50 135,45 L140,48;
-                           M120,50 Q130,48 135,43 L140,46;
-                           M120,50 Q130,50 135,45 L140,48"
-                />
-            </path>
-
-            <!-- Red Dragon Fire -->
-            <g class="fire-breath">
-                <path d="M140,47 Q160,45 180,47" 
-                    fill="none" stroke="rgba(255,165,0,0.6)" stroke-width="2">
-                    <animate attributeName="d"
-                        dur="0.3s"
-                        repeatCount="indefinite"
-                        values="M140,47 Q160,45 180,47;
-                               M140,47 Q160,49 180,47;
-                               M140,47 Q160,45 180,47"
-                    />
-                </path>
-                <path d="M140,47 Q160,47 180,45" 
-                    fill="none" stroke="rgba(255,69,0,0.5)" stroke-width="2">
-                    <animate attributeName="d"
-                        dur="0.3s"
-                        repeatCount="indefinite"
-                        values="M140,47 Q160,47 180,45;
-                               M140,47 Q160,45 180,49;
-                               M140,47 Q160,47 180,45"
-                    />
-                </path>
-            </g>
-        </svg>
-
-        <!-- Blue Dragon -->
-        <svg class="dragon blue-dragon" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-            <path class="dragon-body" d="M30,50 Q45,30 60,50 T90,50 T120,50" 
-                fill="none" stroke="rgba(0,191,255,0.4)" stroke-width="3">
-                <animate attributeName="d" 
-                    dur="3s" 
-                    repeatCount="indefinite"
-                    values="M30,50 Q45,30 60,50 T90,50 T120,50;
-                           M30,50 Q45,70 60,50 T90,50 T120,50;
-                           M30,50 Q45,30 60,50 T90,50 T120,50"
-                />
-            </path>
-            
-            <path class="dragon-wing left-wing" d="M60,50 Q40,20 60,40" 
-                fill="none" stroke="rgba(135,206,250,0.4)" stroke-width="2">
-                <animate attributeName="d"
-                    dur="0.5s"
-                    repeatCount="indefinite"
-                    values="M60,50 Q40,20 60,40;
-                           M60,50 Q45,35 60,45;
-                           M60,50 Q40,20 60,40"
-                />
-            </path>
-            <path class="dragon-wing right-wing" d="M60,50 Q80,20 60,40" 
-                fill="none" stroke="rgba(135,206,250,0.4)" stroke-width="2">
-                <animate attributeName="d"
-                    dur="0.5s"
-                    repeatCount="indefinite"
-                    values="M60,50 Q80,20 60,40;
-                           M60,50 Q75,35 60,45;
-                           M60,50 Q80,20 60,40"
-                />
-            </path>
-
-            <path class="dragon-head" d="M120,50 Q130,50 135,45 L140,48" 
-                fill="none" stroke="rgba(0,191,255,0.5)" stroke-width="3">
-                <animate attributeName="d"
-                    dur="1.5s"
-                    repeatCount="indefinite"
-                    values="M120,50 Q130,50 135,45 L140,48;
-                           M120,50 Q130,48 135,43 L140,46;
-                           M120,50 Q130,50 135,45 L140,48"
-                />
-            </path>
-
-            <g class="fire-breath">
-                <path d="M140,47 Q160,45 180,47" 
-                    fill="none" stroke="rgba(0,255,255,0.6)" stroke-width="2">
-                    <animate attributeName="d"
-                        dur="0.3s"
-                        repeatCount="indefinite"
-                        values="M140,47 Q160,45 180,47;
-                               M140,47 Q160,49 180,47;
-                               M140,47 Q160,45 180,47"
-                    />
-                </path>
-                <path d="M140,47 Q160,47 180,45" 
-                    fill="none" stroke="rgba(127,255,212,0.5)" stroke-width="2">
-                    <animate attributeName="d"
-                        dur="0.3s"
-                        repeatCount="indefinite"
-                        values="M140,47 Q160,47 180,45;
-                               M140,47 Q160,45 180,49;
-                               M140,47 Q160,47 180,45"
-                    />
-                </path>
-            </g>
-        </svg>
-    </div>
-
-    <style>
-        .dragon-container {
-            position: fixed;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            overflow: hidden;
-            background: radial-gradient(circle at center, rgba(20,20,20,0.8), rgba(10,10,10,0.95));
-        }
-
-        /* Game Elements */
-        .game-elements {
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-        }
-
-        .floating-controller {
-            position: absolute;
-            width: 40px;
-            height: 30px;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
-            border-radius: 15px;
-            animation: float-controller 8s ease-in-out infinite;
-        }
-
-        .floating-keyboard {
-            position: absolute;
-            width: 60px;
-            height: 20px;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.15));
-            border-radius: 5px;
-            animation: float-keyboard 10s ease-in-out infinite;
-        }
-
-        .floating-mouse {
-            position: absolute;
-            width: 20px;
-            height: 30px;
-            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.15));
-            border-radius: 10px;
-            animation: float-mouse 7s ease-in-out infinite;
-        }
-
-        @keyframes float-controller {
-            0%, 100% { transform: translate(20vw, 30vh) rotate(5deg); }
-            50% { transform: translate(25vw, 35vh) rotate(-5deg); }
-        }
-
-        @keyframes float-keyboard {
-            0%, 100% { transform: translate(70vw, 60vh) rotate(-3deg); }
-            50% { transform: translate(65vw, 55vh) rotate(3deg); }
-        }
-
-        @keyframes float-mouse {
-            0%, 100% { transform: translate(45vw, 40vh) rotate(0deg); }
-            50% { transform: translate(50vw, 45vh) rotate(0deg); }
-        }
-
-        .dragon {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            filter: url(#glow);
-        }
-
-        .red-dragon {
-            animation: dragon-float-right 30s linear infinite;
-            transform-origin: center;
-        }
-
-        .blue-dragon {
-            animation: dragon-float-left 25s linear infinite;
-            transform-origin: center;
-        }
-
-        /* Enhanced Dragon Effects */
-        .dragon-body {
-            filter: drop-shadow(0 0 15px rgba(255,0,0,0.4));
-            transition: filter 0.3s ease;
-        }
-
-        .dragon-wing {
-            filter: drop-shadow(0 0 10px rgba(255,215,0,0.4));
-            transition: filter 0.3s ease;
-        }
-
-        .dragon-head {
-            filter: drop-shadow(0 0 8px rgba(255,0,0,0.5));
-            transition: filter 0.3s ease;
-        }
-
-        .dragon-tail {
-            filter: drop-shadow(0 0 5px rgba(255,0,0,0.3));
-        }
-
-        .fire-breath {
-            filter: drop-shadow(0 0 12px rgba(255,165,0,0.6));
-            opacity: 0.8;
-            mix-blend-mode: screen;
-        }
-
-        /* Dragon Interaction Effects */
-        .red-dragon:hover .dragon-body,
-        .blue-dragon:hover .dragon-body {
-            filter: drop-shadow(0 0 25px rgba(255,0,0,0.6));
-        }
-
-        .red-dragon:hover .fire-breath,
-        .blue-dragon:hover .fire-breath {
-            opacity: 1;
-            filter: drop-shadow(0 0 20px rgba(255,165,0,0.8));
-        }
-
-        @keyframes dragon-float-right {
-            0% {
-                transform: translate(-100%, 20%) rotate(0deg) scale(1.5);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            45% {
-                transform: translate(100%, -30%) rotate(180deg) scale(2);
-            }
-            50% {
-                transform: translate(100%, -30%) rotate(180deg) scale(2);
-                opacity: 1;
-            }
-            55% {
-                transform: translate(100%, -30%) rotate(180deg) scale(2);
-                opacity: 0;
-            }
-            56% {
-                transform: translate(-100%, 20%) rotate(360deg) scale(1.5);
-                opacity: 0;
-            }
-            65% {
-                opacity: 1;
-            }
-            95% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(-100%, 20%) rotate(720deg) scale(1.5);
-                opacity: 0;
-            }
-        }
-
-        @keyframes dragon-float-left {
-            0% {
-                transform: translate(100%, -30%) rotate(180deg) scale(1.5);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            45% {
-                transform: translate(-100%, 20%) rotate(0deg) scale(2);
-            }
-            50% {
-                transform: translate(-100%, 20%) rotate(0deg) scale(2);
-                opacity: 1;
-            }
-            55% {
-                transform: translate(-100%, 20%) rotate(0deg) scale(2);
-                opacity: 0;
-            }
-            56% {
-                transform: translate(100%, -30%) rotate(180deg) scale(1.5);
-                opacity: 0;
-            }
-            65% {
-                opacity: 1;
-            }
-            95% {
-                opacity: 1;
-            }
-            100% {
-                transform: translate(100%, -30%) rotate(540deg) scale(1.5);
-                opacity: 0;
-            }
-        }
-    </style>
-
-    <!-- SVG Filters -->
-    <svg width="0" height="0">
-        <defs>
-            <filter id="glow">
-                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                <feMerge>
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-            </filter>
-        </defs>
-    </svg>
+    <!-- Background Elements -->
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
 
     <!-- Navigation -->
     <nav class="bg-black bg-opacity-50 backdrop-blur-lg fixed w-full z-50">
@@ -408,46 +51,45 @@
         <div class="absolute inset-0 z-0 p-4 grid-container">
             <!-- Valorant Row -->
             <div class="game-row">
-                <div class="game-bg valorant-1">
+                <div class="game-bg" style="background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt714eaee50b90d841/6577f7018adb4667c9c23627/VAL_Ep7-3_PlayVAL_Homepage-CG-Still.jpg')">
                     <div class="game-label">VALORANT</div>
                 </div>
-                <div class="game-bg valorant-2">
+                <div class="game-bg" style="background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516c0e6b911a0d25/65727d1c4aa0c7448b773f43/Valorant_2023_E7A3_PlayVAL_Banner_1920x1080.jpg')">
                     <div class="game-label">VALORANT</div>
                 </div>
-                <div class="game-bg valorant-3">
+                <div class="game-bg" style="background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt37d3c08f5a2f848b/6571cbb5c9b0cf30e0c8e1f2/VAL_Ep7-3_PlayVAL_Banner_1920x1080.jpg')">
                     <div class="game-label">VALORANT</div>
                 </div>
             </div>
             
             <!-- BGMI Row -->
             <div class="game-row">
-                <div class="game-bg bgmi-1">
+                <div class="game-bg" style="background-image: url('https://www.battlegroundsmobileindia.com/data/img/main_kv.jpg')">
                     <div class="game-label">BGMI</div>
                 </div>
-                <div class="game-bg bgmi-2">
+                <div class="game-bg" style="background-image: url('https://www.battlegroundsmobileindia.com/data/img/update/update_230817_01.jpg')">
                     <div class="game-label">BGMI</div>
                 </div>
-                <div class="game-bg bgmi-3">
+                <div class="game-bg" style="background-image: url('https://www.battlegroundsmobileindia.com/data/img/update/update_230817_02.jpg')">
                     <div class="game-label">BGMI</div>
                 </div>
             </div>
             
             <!-- CS2 Row -->
             <div class="game-row">
-                <div class="game-bg cs2-1">
+                <div class="game-bg" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/csgo/images/csgo_react/cs2/cs2_header.png')">
                     <div class="game-label">CS2</div>
                 </div>
-                <div class="game-bg cs2-2">
+                <div class="game-bg" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/730/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg')">
                     <div class="game-label">CS2</div>
                 </div>
-                <div class="game-bg cs2-3">
+                <div class="game-bg" style="background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_2fcee01bace72bc47a2ad0ba99aae6656f3c2f37.1920x1080.jpg')">
                     <div class="game-label">CS2</div>
                 </div>
             </div>
 
-            <!-- Overlays -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
-            <div class="absolute inset-0 bg-gradient-radial from-transparent via-black/50 to-black opacity-70"></div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-radial from-black via-black/70 to-transparent opacity-75"></div>
         </div>
 
         <style>
@@ -462,9 +104,8 @@
                 flex-direction: column;
                 gap: 1.5rem;
                 height: 100%;
-                padding: 3rem;
-                animation: float 25s ease-in-out infinite;
-                margin-top: -2rem;
+                padding: 2rem;
+                animation: float 20s ease-in-out infinite;
             }
 
             .game-row {
@@ -476,101 +117,19 @@
                 perspective: 1000px;
             }
 
-            @keyframes gradientShift {
-                0% { background-position: 0% 50%, 100% 50%, 0% 50%; }
-                50% { background-position: 100% 50%, 0% 50%, 100% 50%; }
-                100% { background-position: 0% 50%, 100% 50%, 0% 50%; }
-            }
-
             .game-bg {
                 flex: 1;
-                background-size: 200% 200%, 200% 200%, 100% 100%;
+                background-size: cover;
                 background-position: center;
                 border-radius: 1rem;
                 position: relative;
                 overflow: hidden;
                 transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                filter: brightness(0.8) saturate(1);
+                filter: brightness(0.7) saturate(0.9);
                 transform-origin: center;
                 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
                 min-height: 200px;
                 border: 1px solid rgba(255, 255, 255, 0.1);
-                background-color: rgba(20, 20, 20, 0.8);
-                animation: gradientShift 15s ease infinite;
-            }
-
-            /* Valorant Backgrounds */
-            .valorant-1 {
-                background: radial-gradient(circle at top left, #ff4655 0%, transparent 50%),
-                            radial-gradient(circle at bottom right, #dc1623 0%, transparent 50%),
-                            linear-gradient(45deg, #1f1f1f 0%, #2f2f2f 100%);
-            }
-            .valorant-2 {
-                background: radial-gradient(circle at top right, #ff8f98 0%, transparent 50%),
-                            radial-gradient(circle at bottom left, #ff4655 0%, transparent 50%),
-                            linear-gradient(45deg, #2f2f2f 0%, #1f1f1f 100%);
-            }
-            .valorant-3 {
-                background: radial-gradient(circle at center, #ff4655 0%, transparent 60%),
-                            linear-gradient(45deg, #1f1f1f 0%, #2f2f2f 100%);
-            }
-
-            /* BGMI Backgrounds */
-            .bgmi-1 {
-                background: radial-gradient(circle at top left, #ffd700 0%, transparent 50%),
-                            radial-gradient(circle at bottom right, #ff9800 0%, transparent 50%),
-                            linear-gradient(45deg, #2f2f2f 0%, #1f1f1f 100%);
-            }
-            .bgmi-2 {
-                background: radial-gradient(circle at top right, #ff9800 0%, transparent 50%),
-                            radial-gradient(circle at bottom left, #ff5722 0%, transparent 50%),
-                            linear-gradient(45deg, #1f1f1f 0%, #2f2f2f 100%);
-            }
-            .bgmi-3 {
-                background: radial-gradient(circle at center, #ffc107 0%, transparent 60%),
-                            linear-gradient(45deg, #2f2f2f 0%, #1f1f1f 100%);
-            }
-
-            /* CS2 Backgrounds */
-            .cs2-1 {
-                background: radial-gradient(circle at top left, #76ff03 0%, transparent 50%),
-                            radial-gradient(circle at bottom right, #4CAF50 0%, transparent 50%),
-                            linear-gradient(45deg, #1f1f1f 0%, #2f2f2f 100%);
-            }
-            .cs2-2 {
-                background: radial-gradient(circle at top right, #4CAF50 0%, transparent 50%),
-                            radial-gradient(circle at bottom left, #2E7D32 0%, transparent 50%),
-                            linear-gradient(45deg, #2f2f2f 0%, #1f1f1f 100%);
-            }
-            .cs2-3 {
-                background: radial-gradient(circle at center, #4CAF50 0%, transparent 60%),
-                            linear-gradient(45deg, #1f1f1f 0%, #2f2f2f 100%);
-            }
-
-            /* Enhanced texture overlay */
-            .game-bg::after {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background-image: 
-                    url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E"),
-                    linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
-                    linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%);
-                background-size: 20px 20px, 60px 60px, 60px 60px;
-                mix-blend-mode: overlay;
-                pointer-events: none;
-                opacity: 0.5;
-            }
-
-            /* Game-specific hover effects */
-            .valorant-1:hover, .valorant-2:hover, .valorant-3:hover {
-                box-shadow: 0 0 30px rgba(255, 70, 85, 0.3);
-            }
-            .bgmi-1:hover, .bgmi-2:hover, .bgmi-3:hover {
-                box-shadow: 0 0 30px rgba(255, 193, 7, 0.3);
-            }
-            .cs2-1:hover, .cs2-2:hover, .cs2-3:hover {
-                box-shadow: 0 0 30px rgba(76, 175, 80, 0.3);
             }
 
             .game-bg::before {
@@ -587,8 +146,8 @@
             }
 
             .game-bg:hover {
-                filter: brightness(1.2) saturate(1.4);
-                transform: scale(1.08) translateY(-15px) rotateX(8deg);
+                filter: brightness(1.1) saturate(1.3);
+                transform: scale(1.05) translateY(-10px) rotateX(5deg);
                 z-index: 2;
                 box-shadow: 
                     0 20px 25px rgba(0, 0, 0, 0.5),
@@ -597,18 +156,6 @@
 
             .game-bg:hover::before {
                 opacity: 1;
-            }
-
-            /* Adjust text position to work better with the grid */
-            .container {
-                margin-top: -4rem;
-                position: relative;
-                z-index: 20;
-            }
-
-            /* Add subtle glow to text container */
-            .container::before {
-                content: none;
             }
 
             .game-label {
@@ -633,51 +180,9 @@
                 transform: translateY(0);
             }
 
-            /* Staggered animation delays for rows and cards */
             .game-row:nth-child(1) { animation-delay: 0s; }
             .game-row:nth-child(2) { animation-delay: -5s; }
             .game-row:nth-child(3) { animation-delay: -10s; }
-
-            .valorant-1 { animation-delay: 0s; }
-            .valorant-2 { animation-delay: -5s; }
-            .valorant-3 { animation-delay: -10s; }
-
-            .bgmi-1 { animation-delay: -2s; }
-            .bgmi-2 { animation-delay: -7s; }
-            .bgmi-3 { animation-delay: -12s; }
-
-            .cs2-1 { animation-delay: -4s; }
-            .cs2-2 { animation-delay: -9s; }
-            .cs2-3 { animation-delay: -14s; }
-
-            /* Enhanced hover effects */
-            .game-bg:hover {
-                filter: brightness(1.2) saturate(1.4) contrast(1.1);
-                transform: scale(1.08) translateY(-15px) rotateX(8deg);
-                z-index: 2;
-                animation-play-state: paused;
-            }
-
-            .valorant-1:hover, .valorant-2:hover, .valorant-3:hover {
-                box-shadow: 
-                    0 20px 25px rgba(0, 0, 0, 0.5),
-                    0 0 30px rgba(255, 70, 85, 0.3),
-                    0 0 20px rgba(255, 0, 0, 0.2);
-            }
-
-            .bgmi-1:hover, .bgmi-2:hover, .bgmi-3:hover {
-                box-shadow: 
-                    0 20px 25px rgba(0, 0, 0, 0.5),
-                    0 0 30px rgba(255, 193, 7, 0.3),
-                    0 0 20px rgba(255, 152, 0, 0.2);
-            }
-
-            .cs2-1:hover, .cs2-2:hover, .cs2-3:hover {
-                box-shadow: 
-                    0 20px 25px rgba(0, 0, 0, 0.5),
-                    0 0 30px rgba(76, 175, 80, 0.3),
-                    0 0 20px rgba(46, 125, 50, 0.2);
-            }
 
             @keyframes row-float {
                 0% { transform: translateX(-15px); }
@@ -715,61 +220,13 @@
                         0 10px 20px rgba(0,0,0,0.5),
                         2px 2px 2px rgba(206, 89, 55, 0.2),
                         -2px -2px 2px rgba(255, 215, 0, 0.2),
-                0 0 15px rgba(255, 0, 0, 0.3),
-                0 0 30px rgba(255, 215, 0, 0.2);
-            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
-            transform: perspective(1000px) rotateX(15deg);
-            letter-spacing: 6px;
-            position: relative;
-            font-weight: 900;
-        }
-
-        .enhanced-dominate-text {
-            animation: pulse-glow 3s ease-in-out infinite alternate;
-            text-shadow:
-                0 0 4px #FFD700,
-                0 0 8px #FF8C00,
-                0 0 12px #FF4500,
-                0 0 15px #FF0000,
-                0 0 18px #FF4500,
-                0 0 20px #FF8C00,
-                0 0 22px #FFD700;
-            transition: text-shadow 0.3s ease;
-            background: linear-gradient(
-                45deg,
-                #b0b0b0 0%,
-                #d0d0d0 25%,
-                #f0f0f0 50%,
-                #d0d0d0 75%,
-                #b0b0b0 100%
-            );
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
-        }
-
-                @keyframes pulse-glow {
-                    0% {
-                        text-shadow:
-                            0 0 5px #FFD700,
-                            0 0 10px #FF8C00,
-                            0 0 15px #FF4500,
-                            0 0 20px #FF0000,
-                            0 0 25px #FF4500,
-                            0 0 30px #FF8C00,
-                            0 0 35px #FFD700;
-                    }
-                    100% {
-                        text-shadow:
-                            0 0 20px #FFD700,
-                            0 0 40px #FF8C00,
-                            0 0 60px #FF4500,
-                            0 0 80px #FF0000,
-                            0 0 100px #FF4500,
-                            0 0 120px #FF8C00,
-                            0 0 140px #FFD700;
-                    }
+                        0 0 15px rgba(255, 0, 0, 0.3),
+                        0 0 30px rgba(255, 215, 0, 0.2);
+                    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+                    transform: perspective(1000px) rotateX(15deg);
+                    letter-spacing: 6px;
+                    position: relative;
+                    font-weight: 900;
                 }
 
                 .dragon-metallic-text::after,
@@ -908,7 +365,7 @@
             <!-- Google Font for Dragon Style -->
             <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
             
-            <h1 class="text-6xl md:text-8xl font-bold mb-8 dragon-metallic-text tracking-tight enhanced-dominate-text">
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 dragon-metallic-text tracking-tight">
                 DOMINATE<br>THE GAME
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
